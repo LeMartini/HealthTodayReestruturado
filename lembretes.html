@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>IconHealthToday | Entrar</title>
+    <link rel="stylesheet" href="style/lembretes.css">
+    <link rel="icon" href="icon/logo.png" type="image/png" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container-apresentacao">
+            <div class="imagensIndex">
+                <img class="imageIconHealthToday" src="icon/lettermark.png" alt="imageIconHealthToday" />
+                <img class="logoIconHealthToday" src="icon/logo.png" alt="logoIconHealthToday" />
+            </div>
+            <h3>Podemos te ajudar a lembrar!</h3>
+            <a href="home.html" class="signup-button">Voltar ao Menu</a>
+        </div>
+
+        <div class="reminder-sections">
+            <section id="reminders-section">
+                <h2>Meus Lembretes</h2>
+                <form id="reminder-form" onsubmit="addReminder(event)">
+                    <label for="reminder-text">Título do Lembrete:</label>
+                    <input type="text" id="reminder-text" required>
+
+                    <label for="reminder-text">Texto do Lembrete:</label>
+                    <input type="text" id="reminder-text" required>
+        
+                    <label for="reminder-date">Data do Lembrete:</label>
+                    <input type="date" id="reminder-date" required>
+        
+                    <button type="submit">Adicionar Lembrete</button>
+                    <button type="submit">Atualizar Lembrete</button>
+                </form>
+    
+                <ul id="reminders-list">
+                    <!-- A lista de lembretes será inserida aqui pelo JavaScript -->
+                </ul>
+            </section>
+    
+            <section id="expired-reminders-section">
+                <h2>Lembretes vencidos</h2>
+                <ul id="expired-reminders-list">
+                    <!-- A lista de lembretes vencidos será inserida aqui pelo JavaScript -->
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

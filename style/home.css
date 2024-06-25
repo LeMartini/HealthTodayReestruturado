@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1b49b;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: #fbf09e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    width: 100%;
+}
+
+.login-container-apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.imageIconHealthToday, .logoIconHealthToday {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.login-container h2, .login-container h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #fa9949;
+    margin: 10px 0;
+}
+
+.login-container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+#signup-form {
+    margin: 20px 0;
+    font-size: 10px;
+}
+
+.login-container-form h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #fa9949;
+    word-break: break-word;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.return-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #fa9949;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    margin: 10px 0px 100px 450px;
+    width: 40px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    font-family: "Raleway", sans-serif;
+}
+
+.signup-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: #fa9949;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    margin: 10px;
+    width: 250px;
+    font-size: 30px;
+    transition: background-color 0.3s ease;
+    font-family: "Raleway", sans-serif;
+}
+
+.signup-button img {
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.return-button:hover {
+    background-color: #e09b60;
+}
+
+.signup-button:hover {
+    background-color: #e09b60;
+}

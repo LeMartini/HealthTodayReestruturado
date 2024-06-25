@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1b49b;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fbf09e;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-container-apresentacao {
+    display: flex;
+    flex-direction: row; /* Direção dos itens: linha */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imageIconHealthToday, .logoIconHealthToday {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.container h2, .container h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #fa9949;
+    margin: 5px 0;
+    margin-right: 10px;
+}
+
+.reminder-sections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#reminders-section, #expired-reminders-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(50% - 20px); /* 50% width with spacing */
+    box-sizing: border-box;
+    text-align: left;
+}
+
+#reminders-section h2, #expired-reminders-section h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: #fa9949;
+    margin-bottom: 20px;
+}
+
+#reminder-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#reminder-form label {
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+#reminder-form input, #reminder-form button {
+    padding: 10px;
+    border: 1px solid #fa9949;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+#reminder-form button {
+    background-color: #fa9949;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+#reminder-form button:hover {
+    background-color: #e09b60;
+}
+
+#reminders-list, #expired-reminders-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#reminders-list li, #expired-reminders-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #FFB16F;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.signup-button{
+    padding: 10px 20px;
+    background-color: #fa9949;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    margin: 5px;
+    margin-left: 120px;
+}
+
+.imagensIndex{
+    margin-right: 120px;
+}

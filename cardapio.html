@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>IconHealthToday | Entrar</title>
+    <link rel="stylesheet" href="style/cardapio.css">
+    <link rel="icon" href="icon/logo.png" type="image/png" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container-apresentacao">
+            <div class="imagensIndex">
+                <img class="imageIconHealthToday" src="icon/lettermark.png" alt="imageIconHealthToday" />
+                <img class="logoIconHealthToday" src="icon/logo.png" alt="logoIconHealthToday" />
+            </div>
+            <h3>Podemos te ajudar com a alimentação!</h3>
+            <a href="home.html" class="signup-button">Voltar ao Menu</a>
+        </div>
+
+        <div id="date-container">
+            <div class="inputdata">
+                <p id="selected-date">Data selecionada: </p>
+                <input type="text" id="datepicker" placeholder="Selecione a data">
+            </div>
+            <div class="inputcardapio">
+                <div id="meal-tabs">
+                        <div class="tab">
+                            <button class="tab-button" id="cafe-da-manha-button">Café da Manhã </button>
+                            <textarea class="tab-content" id="cafe-da-manha-content"></textarea>
+                        </div>
+                        <div class="tab">
+                            <button class="tab-button">Almoço </button>
+                            <textarea class="tab-content" id="almoco-content"></textarea>
+                        </div>
+                        <div class="tab">
+                            <button class="tab-button">Café da Tarde </button>
+                            <textarea class="tab-content" id="cafe-da-tarde-content"></textarea>
+                        </div>
+                        <div class="tab">
+                            <button class="tab-button">Janta </button>
+                            <textarea class="tab-content" id="janta-content"></textarea>
+                        </div>
+                        <div id="datepicker"></div>
+                            <button id="save-menu-btn" class="save-menu-btn">Salvar Cardápio</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+</body>
+
+</html>
+
+<script>
+    flatpickr("#datepicker", {
+        dateFormat: "d/m/Y", // Formato da data
+        locale: "pt", // Localização para português
+        onChange: function(selectedDates, dateStr, instance) {
+            const selectedDateElem = document.getElementById("selected-date");
+            selectedDateElem.textContent = "Data selecionada: ";
+        }
+    });
+</script>
